@@ -1,0 +1,2 @@
+# pride
+Awardis API Service
