@@ -1,5 +1,6 @@
 package org.awardis.pride.persistence.dao;
 
-public interface UserDao extends CommonDao {
+import org.awardis.pride.persistence.model.UserEntity;
 
+public interface UserDao extends CommonDao<UserEntity> {
 }
