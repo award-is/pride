@@ -1,4 +1,6 @@
 package org.awardis.pride.repository;
 
-public interface AchievementRepository extends CommonRepository {
+import org.awardis.pride.model.AchievementEntity;
+
+public interface AchievementRepository extends CommonRepository<AchievementEntity> {
 }

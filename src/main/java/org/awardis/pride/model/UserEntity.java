@@ -23,4 +23,8 @@ public class UserEntity extends CommonEntity {
 
     @Column(name = "avatar")
     private String avatarUrl;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "achievement", nullable = false)
+    private AchievementEntity achievement;
 }

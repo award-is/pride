@@ -1,4 +1,6 @@
 package org.awardis.pride.repository;
 
-public interface CommunityRepository extends CommonRepository {
+import org.awardis.pride.model.CommonEntity;
+
+public interface CommunityRepository extends CommonRepository<CommonEntity> {
 }
