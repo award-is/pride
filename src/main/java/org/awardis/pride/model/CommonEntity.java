@@ -1,4 +1,4 @@
-package org.awardis.pride.persistence.model;
+package org.awardis.pride.model;
 
 import lombok.Getter;
 import lombok.Setter;

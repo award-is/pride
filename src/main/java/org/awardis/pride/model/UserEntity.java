@@ -1,4 +1,4 @@
-package org.awardis.pride.persistence.model;
+package org.awardis.pride.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,7 +18,9 @@ public class UserEntity extends CommonEntity {
     @Column(nullable = false)
     private String password;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "profile_id", nullable = false, unique = true)
-    private UserProfileEntity profile;
+    @Column(nullable = false, length = 20)
+    private String nickname;
+
+    @Column(name = "avatar")
+    private String avatarUrl;
 }
