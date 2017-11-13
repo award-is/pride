@@ -3,6 +3,7 @@ package org.awardis.pride.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.awardis.pride.util.AccountStatus;
 
 import javax.persistence.*;
 
@@ -17,6 +18,9 @@ public class UserEntity extends CommonEntity {
 
     @Column(nullable = false)
     private String password;
+
+    @Enumerated(value = EnumType.STRING)
+    private AccountStatus status;
 
     @Column(length = 20)
     private String nickname;
