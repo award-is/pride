@@ -12,13 +12,13 @@ import javax.persistence.*;
 @Entity
 @Table(name = "user")
 public class UserEntity extends CommonEntity {
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 100)
     private String email;
 
     @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false, length = 20)
+    @Column(length = 20)
     private String nickname;
 
     @Column(name = "avatar")
